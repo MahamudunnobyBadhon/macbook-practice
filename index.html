@@ -5,24 +5,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MackBook Pro</title>
+    <!--connecting with tailwind css framework-->
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
 
 </head>
 <body>
     <section>
        <div class="grid grid-cols-2 justify-center ">
+        <!--images in the left side-->
         <div class="px-20 py-10">
             <img class="w-3/4"  src="Images/mac.png" alt="">
         </div>
+        <!--Calculation on the rightside-->
         <div>
             <h1 class="text-5xl font-bold">Welcome to Our Shop</h1>
             <h3 class="text-3xl mt-5 font-bold">Customize your laptop with bellow items</h3>
+
             <div>
+                <!--memory button-->
                 <p class="3xl mt-5 font-bold">Memory</p>
                 <button id="8gb-memory-btn" class="border-2 border-black rounded bg-red-200 px-2 py-1">8GB unified Memory</button>
                 <button id="16gb-memory-btn" class="border-2 border-black rounded bg-red-200 px-2 py-1">16GB unified Memory</button>
             </div>
             <div>
+                <!--storage button-->
                 <p class="3xl mt-5 font-bold">Storage</p>
                 <button id="256gb-ssd-btn" class="border-2 border-black rounded bg-red-200 px-2 py-1">256GB SSD storage</button>
                 <button id="512gb-ssd-btn" class="border-2 border-black rounded bg-red-200 px-2 py-1">512GB SSD storage</button>
@@ -30,10 +36,13 @@
 
             </div>
             <div>
+                <!--delivery button-->
                 <p class="3xl mt-5 font-bold">Choose your delivery option</p>
                 <button id="free-delivery-btn" class="border-2 border-black rounded bg-red-200 px-2 py-1">Friday, Aug 25, Free</button>
                 <button id="costly-delivery-btn" class="border-2 border-black rounded bg-red-200 px-2 py-1">Friday, Aug 19, Delivery Cost $20</button>
             </div>
+
+            <!--showing the calculation after their selection-->
             <div class="mt-10 grid grid-cols-2">
                 <div>
                     <h5 class=" font-bold">Best Price</h5>
@@ -52,7 +61,7 @@
                     <h5 class=" font-bold">$<span id="total-cost">1299</span></h5>
                  </div>
             </div>
-
+            <!--Use the promo code-->
             <div class="mt-5 font-bold">
                 <p>Input promo code</p>
                 <input id="promo-code-text"class="border-2 border-black rounded px-3 py-1"type="text" placeholder="input promo Code">
@@ -61,11 +70,13 @@
         </div>
     </div>
 </section>
+
+<!--discount Ammount after using promo code-->
 <footer class="mt-10">
     <hr>
     <h1 class="text-5xl text-center">Total $ <span id="discount-price">1299</span></h1>
 </footer>
-
+        <!--connecting with javascript file-->
         <script src="JS/script.js"></script>
 </body>
 </html>
